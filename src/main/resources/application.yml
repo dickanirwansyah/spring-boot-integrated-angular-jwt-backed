@@ -1,0 +1,31 @@
+#SECURITY CONFIGURATION
+#security:
+#  oauth2:
+#    resource:
+#      filter-order: 3
+#  signing-key: MaYzkSjmkzPC57L
+#  encoding-strength: 256
+#  security-realm: Spring boot JWT Oauth Realm
+#  jwt:
+#    client-id: testjwtclientid
+#    client-secret: XY7kmzoNzl100
+#    grant-type: password
+#    scope-read: read
+#    scope-write: write
+#    resource-ids: testjwtresourceid
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dbjjwt
+    username: dbjjwt
+    password: root
+
+---
+
+spring:
+  jpa:
+    generate-dll: true
+    show-sql: true
+
+
+
