@@ -21,7 +21,6 @@ public class Roles implements Serializable{
     private String description;
 
 
-
     public int getIdroles(){
         return idroles;
     }

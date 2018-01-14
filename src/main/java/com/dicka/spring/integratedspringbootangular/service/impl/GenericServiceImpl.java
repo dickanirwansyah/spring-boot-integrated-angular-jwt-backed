@@ -5,6 +5,7 @@ import com.dicka.spring.integratedspringbootangular.entity.Users;
 import com.dicka.spring.integratedspringbootangular.repository.HotelRepository;
 import com.dicka.spring.integratedspringbootangular.repository.UsersRepository;
 import com.dicka.spring.integratedspringbootangular.service.GenericService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,6 +20,7 @@ public class GenericServiceImpl implements GenericService{
     private final UsersRepository usersRepository;
     private final HotelRepository hotelRepository;
 
+    @Autowired
     public GenericServiceImpl(UsersRepository usersRepository, HotelRepository hotelRepository){
         this.usersRepository=usersRepository;
         this.hotelRepository=hotelRepository;

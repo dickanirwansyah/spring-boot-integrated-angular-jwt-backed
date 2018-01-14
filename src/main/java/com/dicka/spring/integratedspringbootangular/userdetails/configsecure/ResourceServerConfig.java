@@ -31,6 +31,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .requestMatchers()
                 .and()
                 .authorizeRequests()
+                .antMatchers("/users/**").permitAll()
                 .antMatchers("/springjwt/**").authenticated();
     }
 }
